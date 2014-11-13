@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Wavey Days</title>
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="container">
+	<div id="child"></div>	
+</div>
+</body>
+</html>
