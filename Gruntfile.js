@@ -11,9 +11,18 @@ grunt.initConfig({
     	},
     },
 
-    watch: {
+	sass: {
+		dist: {
+			files: {
+				'css\\style.css': 'sass\\style.scss',
+				'css\\test.css' : 'sass\\test.scss',
+			}
+		}
+	},
+
+	watch: {
 		options: {
-	    	livereload: 9000,
+	    	livereload: 1337,
 	    },
 	    sass: {
 	    	files: ['C:\\wamp\\www\\flexy\\sass\\*.scss'],
@@ -25,25 +34,17 @@ grunt.initConfig({
 	    },
 	},
 
-	sass: {
-		dist: {
-			files: {
-				'css\\style.css': 'sass\\style.scss',
-				'css\\test.css' : 'sass\\test.scss',
-			}
-		}
-	},
-
 	express: {
 		all: {
 			options: {
-				port: 9000, 
+				port: 1337, 
 				hostname: 'localhost',
 				bases: ['C:\\wamp\\www\\flexy'],
 				livereload: true,
 			},
 		},
   	},
+
 });
 
   // Load the plugin that provides the "uglify" task.

@@ -1,0 +1,68 @@
+// reset styles
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: $white;
+}
+
+::selection {
+	color: $white;
+	background-color: $secondary;
+}
+
+// base header styles
+
+h1, h2, h3, h4, h5, h6 {
+	color: $dgrey;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 7rem;
+	font-family: Blue Highway;
+	@media screen and (max-width: $break-medium) {
+		font-size: 5rem;
+	}
+	@media screen and (max-width: $break-small) {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+	font-family: Coolvetica Rg;
+}
+
+h3 {
+	@extend h2;
+	font-size: 1.75rem;
+	text-transform: uppercase;
+	color: $secondary;
+	letter-spacing: 0.2rem;
+	word-spacing: -0.15rem;
+	margin-bottom: 0.5rem;
+}
+
+// base paragraph style
+
+p {
+	font-family: Roboto Condensed;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+// 
+
+img {
+	height: auto;
+	width: 100%;
+}

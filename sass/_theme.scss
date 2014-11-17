@@ -1,0 +1,18 @@
+// svg
+
+.smallblock svg {
+	transition: fill 0.5s ease;
+	display: block;
+	fill: $dgrey;
+	width: 75%;
+	height: 75%;
+	margin: 0px auto 2rem auto;
+} 
+
+.smallblock:hover svg {
+	fill: $black;
+} 
+
+
+
+
