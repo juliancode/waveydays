@@ -110,11 +110,8 @@ nav {
 
 // lander 
 
-#lander {
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
+#homelander {
+	@extend %flex;
 	height: 95%;
 	background-image: url("https://unsplash.imgix.net/reserve/ujKaaIATKKx7vi5kkfQn__DSC3932.jpg?q=75&fm=jpg&s=1c23eb9e4d01af2e39c0329ddcc59cd3");
 	background-size: cover;

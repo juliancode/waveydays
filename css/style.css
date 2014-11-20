@@ -144,36 +144,24 @@ nav {
   margin-left: 4px;
   vertical-align: text-bottom; }
 
-#lander {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-          -webkit-align-content: center;
-          align-content: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+#homelander {
   height: 95%;
   background-image: url("https://unsplash.imgix.net/reserve/ujKaaIATKKx7vi5kkfQn__DSC3932.jpg?q=75&fm=jpg&s=1c23eb9e4d01af2e39c0329ddcc59cd3");
   background-size: cover;
   background-position: center; }
-  #lander svg {
+  #homelander svg {
     position: relative;
     top: -5%;
     width: 10%;
     height: 10%;
     fill: #333; }
-  #lander h1 {
+  #homelander h1 {
     display: block;
     position: relative;
     top: -6%;
     line-height: 1;
     letter-spacing: -0.4rem; }
-  #lander h2, #lander h3 {
+  #homelander h2, #homelander h3 {
     position: relative;
     top: -5%;
     line-height: 0.5;
@@ -192,10 +180,10 @@ footer p {
 .underline {
   border-bottom: 1px solid #a2958f; }
 
-.fullwidth, html, body, img, nav ul, nav ul li ul, #lander h1, #lander h2, #lander h3, footer p, .maincontainer, .videogallery, .nopadcontainer, #child {
+.fullwidth, html, body, img, nav ul, nav ul li ul, #homelander h1, #homelander h2, #homelander h3, footer p, .maincontainer, .videogallery, .nopadcontainer, #child {
   width: 100%; }
 
-.center, nav ul, nav ul li, nav ul li ul, #lander h1, #lander h2, #lander h3, footer p {
+.center, nav ul, nav ul li, nav ul li ul, #homelander h1, #homelander h2, #homelander h3, footer p {
   text-align: center; }
 
 .maincontainer, .videogallery {
@@ -212,7 +200,7 @@ footer p {
   text-align: justify;
   width: 50%; }
 
-.maincontainer, .videogallery, .nopadcontainer, header, #logo, footer, .buttons {
+#homelander, .maincontainer, .videogallery, .nopadcontainer, header, #logo, footer, .buttons {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
