@@ -1,7 +1,6 @@
 // youtube slider
 // ==============
 
-
 function populateVideos(data) {
     "use strict";
     // variables
@@ -94,18 +93,19 @@ $(document).ready(function() {
 // ========================
 
 var drop = $("#drop");
-var seconditem = $(".seconditem");
 var secondlist = $(".secondlist")
+var open = false;
 
 function toggleNav(){
-	var open = false;
-	// if the navigation is open close it, else open (toggle effect)
+	
+	// if the navigation is open close it, else open it (toggle effect)
 	if (open) {
 		secondlist.velocity({height: "0rem"}, 250);
 		open = false;
-	} else {
+	} 
+	else {
 		secondlist.velocity({height: "15rem"}, 250);
-		console.log(open);
+		open = true;
 	}
 }
 
