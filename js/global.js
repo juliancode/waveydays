@@ -36,7 +36,7 @@ $(document).ready(function() {
 	child5 = $("#child:nth-child(5)"),
 	child6 = $("#child:nth-child(6)"),
 
-	slideTime = "1000";
+	slideTime = "250";
 
 	//gives first button the class of current
 	button1.addClass("current");
@@ -88,3 +88,29 @@ $(document).ready(function() {
 		$(this).addClass("current");
 	});
 });
+
+
+// dropdown navigation code
+// ========================
+
+var drop = $("#drop");
+var seconditem = $(".seconditem");
+var secondlist = $(".secondlist")
+
+function toggleNav(){
+	var open = false;
+	// if the navigation is open close it, else open (toggle effect)
+	if (open) {
+		secondlist.velocity({height: "0rem"}, 250);
+		open = false;
+	} else {
+		secondlist.velocity({height: "15rem"}, 250);
+		console.log(open);
+	}
+}
+
+// function to execute when dropdown is clicked
+drop.click(function(){
+	toggleNav();
+});
+

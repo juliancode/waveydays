@@ -7,15 +7,15 @@ grunt.initConfig({
  		browsers: ['last 2 versions']
 		},
 		no_dest: {
-      	src: 'css\\style.css' // globbing is also possible here
+      	src: 'css/style.css' // globbing is also possible here
     	},
     },
 
 	sass: {
 		dist: {
 			files: {
-				'css\\style.css': 'sass\\style.scss',
-				'css\\test.css' : 'sass\\test.scss',
+				'css/style.css': 'sass/style.scss',
+				'css/test.css' : 'sass/test.scss',
 			}
 		}
 	},
@@ -25,11 +25,11 @@ grunt.initConfig({
 	    	livereload: 1337,
 	    },
 	    sass: {
-	    	files: ['C:\\wamp\\www\\flexy\\sass\\*.scss'],
+	    	files: ['C:/wamp/www/flexy/sass/*.scss'],
 	    	tasks: ['sass'],
 	    },
 	    prefixer: {
-		    files: ['C:\\wamp\\www\\flexy\\css\\*.css'],
+		    files: ['C:/wamp/www/flexy/css/*.css'],
 		    tasks: ['autoprefixer'],
 	    },
 	},
@@ -39,7 +39,7 @@ grunt.initConfig({
 			options: {
 				port: 1337, 
 				hostname: 'localhost',
-				bases: ['C:\\wamp\\www\\flexy'],
+				bases: ['C:/wamp/www/flexy'],
 				livereload: true,
 			},
 		},

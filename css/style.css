@@ -4,7 +4,6 @@
   padding: 0px; }
 
 html, body {
-  width: 100%;
   height: 100%; }
 
 body {
@@ -18,13 +17,19 @@ body {
   color: #fff;
   background-color: #a2958f; }
 
+figcaption {
+  font-style: italic;
+  font-family: Arial;
+  text-align: right;
+  margin: -2rem 2rem 0rem 2rem; }
+
 h1, h2, h3, h3, h4, h5, h6 {
   color: #333; }
 
 h1 {
   text-transform: uppercase;
   font-size: 7rem;
-  font-family: Blue Highway; }
+  font-family: Highway; }
   @media screen and (max-width: 720px) {
     h1 {
       font-size: 5rem; } }
@@ -41,7 +46,7 @@ h3 {
   color: #a2958f;
   letter-spacing: 0.2rem;
   word-spacing: -0.15rem;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 2rem; }
 
 p {
   font-family: Roboto Condensed;
@@ -49,12 +54,7 @@ p {
   margin-bottom: 0.5rem; }
 
 img {
-  height: auto;
-  width: 100%; }
-
-#container {
-  width: 100%;
-  height: 100%; }
+  height: auto; }
 
 header {
   background: linear-gradient(#000, #222);
@@ -86,14 +86,12 @@ nav {
     nav {
       width: 80%; } }
   nav ul {
-    width: 100%;
     margin: 0 auto;
-    text-align: center;
     list-style-type: none; }
     nav ul li {
+      position: relative;
       font-family: Coolvetica Rg;
       display: inline;
-      text-align: center;
       color: #fff;
       font-size: 1.25rem; }
       @media screen and (max-width: 1200px) {
@@ -108,6 +106,31 @@ nav {
       nav ul li a {
         text-transform: uppercase;
         padding: 1rem; }
+      nav ul li ul {
+        display: block;
+        position: absolute;
+        top: 2.25rem;
+        z-index: 20;
+        height: 0rem;
+        overflow: hidden; }
+        nav ul li ul li {
+          background-color: #a2958f;
+          display: block;
+          padding: 1rem;
+          color: #fff; }
+          nav ul li ul li a {
+            padding: 0rem 2rem; }
+        nav ul li ul li:nth-child(odd) {
+          background-color: #b9afab;
+          padding: 1rem; }
+        nav ul li ul li:hover {
+          background: linear-gradient(#000, #222);
+          background-color: #000;
+          padding: 1rem; }
+        nav ul li ul a.second {
+          color: #fff; }
+      nav ul li .open {
+        display: block; }
 
 .dropdown::after {
   content: "";
@@ -148,17 +171,13 @@ nav {
     display: block;
     position: relative;
     top: -6%;
-    width: 100%;
-    text-align: center;
     line-height: 1;
     letter-spacing: -0.4rem; }
   #lander h2, #lander h3 {
     position: relative;
     top: -5%;
     line-height: 0.5;
-    display: block;
-    width: 100%;
-    text-align: center; }
+    display: block; }
 
 footer {
   height: 10%;
@@ -167,24 +186,33 @@ footer {
   background-repeat: repeat-x; }
 
 footer p {
-  width: 100%;
   display: block;
-  color: #fff;
-  text-align: center; }
+  color: #fff; }
 
 .underline {
   border-bottom: 1px solid #a2958f; }
 
-.altheading {
-  color: #ccc;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2rem; }
+.fullwidth, html, body, img, nav ul, nav ul li ul, #lander h1, #lander h2, #lander h3, footer p, .maincontainer, .videogallery, .nopadcontainer, #child {
+  width: 100%; }
 
-.center {
+.center, nav ul, nav ul li, nav ul li ul, #lander h1, #lander h2, #lander h3, footer p {
   text-align: center; }
 
-header, #logo, footer, #maincontainer, #youtubecontainer {
+.maincontainer, .videogallery {
+  padding: 6rem 0rem; }
+
+.mediumblock {
+  text-align: justify;
+  margin: 0rem 2rem;
+  width: 50%; }
+  .mediumblock img {
+    margin-top: 2rem; }
+
+.twoblock {
+  text-align: justify;
+  width: 50%; }
+
+.maincontainer, .videogallery, .nopadcontainer, header, #logo, footer, .buttons {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -199,17 +227,6 @@ header, #logo, footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-#maincontainer, #youtubecontainer {
-  width: 100%;
-  padding: 4rem 0rem; }
-
-.mediumblock {
-  text-align: justify;
-  margin: 0rem 2rem;
-  width: 30%; }
-  .mediumblock img {
-    margin-top: 2rem; }
 
 .smallblock {
   text-align: justify;
@@ -228,32 +245,31 @@ header, #logo, footer {
   .smallblock:last-child {
     border: 0px; }
 
-#youtubecontainer {
+.videogallery {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   position: relative;
-  background-color: #a2958f;
+  background-color: #333;
   background-image: url("/images/diagmonds.png"); }
-  #youtubecontainer .slidercontainer {
-    width: 50%;
+  .videogallery .slidercontainer {
+    width: 720px;
     height: 500px;
     position: relative;
     overflow: hidden; }
     @media screen and (max-width: 1200px) {
-      #youtubecontainer .slidercontainer {
+      .videogallery .slidercontainer {
         width: 90%; } }
     @media screen and (max-width: 720px) {
-      #youtubecontainer .slidercontainer {
+      .videogallery .slidercontainer {
         width: 90%;
         height: 400px; } }
     @media screen and (max-width: 420px) {
-      #youtubecontainer .slidercontainer {
+      .videogallery .slidercontainer {
         width: 90%;
         height: 200px; } }
 
 #child {
-  width: 100%;
   height: 100%;
   position: absolute; }
   #child:nth-child(1) {
@@ -270,13 +286,7 @@ header, #logo, footer {
     left: 500%; }
 
 .buttons {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
+  width: 100%;
   height: 5%;
   margin: 2rem 2rem 0rem 2rem; }
 
@@ -291,10 +301,10 @@ header, #logo, footer {
   border-radius: 100%; }
 
 .button:hover {
-  background-color: #333; }
+  background-color: #fff; }
 
 .button.current {
-  background-color: #000; }
+  background-color: #a2958f; }
 
 a, a:hover, nav ul li a.active, a:visited, a:active {
   transition: color 0.5s ease;
@@ -305,7 +315,7 @@ a:hover, nav ul li a.active {
   color: #a2958f; }
 
 .logosvg {
-  transition: fill 0.5s ease;
+  transition: fill 0.25s ease;
   fill: #ccc;
   width: 75%;
   height: 75%; }
@@ -314,7 +324,7 @@ a#logo:hover .logosvg, nav ul li a#logo.active .logosvg {
   fill: #a2958f; }
 
 .smallblock svg {
-  transition: fill 0.5s ease;
+  transition: fill 0.25s ease;
   display: block;
   fill: #333;
   width: 75%;

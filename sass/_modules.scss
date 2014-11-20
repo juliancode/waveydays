@@ -4,16 +4,42 @@
 	border-bottom: 1px solid $secondary;
 }
 
-.altheading { // to be used on text over $secondary colour background
-	color: $lgrey;
+.fullwidth {
 	width: 100%;
-	text-align: center;
-	margin-bottom: 2rem;
 }
 
 .center {
 	text-align: center;
 }
+
+.maincontainer {
+	@extend .fullwidth;
+	@extend %flex;
+	padding: $bigpadding 0rem;
+}
+
+.nopadcontainer {
+	@extend .fullwidth;
+	@extend %flex;
+}
+
+
+
+.mediumblock {
+	text-align: justify;
+	margin: 0rem 2rem;
+	width: 50%;
+	img {
+		margin-top: 2rem;
+	}
+}
+
+.twoblock {
+	text-align: justify;
+	width: 50%;
+}
+
+// reusable placeholders
 
 %flex {
 	display: flex;
@@ -24,21 +50,6 @@
 %flexcenter {
 	@extend %flex;
 	align-items: center;
-}
-
-#maincontainer {
-	width: 100%;
-	@extend %flex;
-	padding: 4rem 0rem;
-}
-
-.mediumblock {
-	text-align: justify;
-	margin: 0rem 2rem;
-	width: 30%;
-	img {
-		margin-top: 2rem;
-	}
 }
 
 .smallblock {
@@ -62,15 +73,15 @@
 
 // youtube slider
 
-#youtubecontainer {
-	@extend #maincontainer;
+.videogallery {
+	@extend .maincontainer;
 	flex-wrap: wrap;
 	position: relative;
-	background-color: $secondary;
+	background-color: $dgrey;
 	background-image: url('/images/diagmonds.png');
 	.slidercontainer {	
-		width: 50%;
-		height: 500px;
+		width: 720px;
+		height: 500px; //500px
 		position: relative;
 		overflow: hidden;
 		@media screen and (max-width: $break-large) {
@@ -88,7 +99,7 @@
 }
 
 #child {
-	width: 100%;
+	@extend .fullwidth;
 	height: 100%;
 	position: absolute;
 	&:nth-child(1) {
@@ -112,11 +123,10 @@
 }
 
 .buttons {
-	display: flex;
-	justify-content: center;
-	width: 50%;
+	@extend %flex;
+	width: 100%;
 	height: 5%;
-	margin: 2rem 2rem 0rem 2rem;
+	margin: $medpadding $medpadding 0rem $medpadding;
 }
 
 .button {
@@ -131,9 +141,9 @@
 }
 
 .button:hover {
-	background-color: $dgrey;
+	background-color: $white;
 }
 
 .button.current {
-	background-color: $black;
+	background-color: $secondary;
 }

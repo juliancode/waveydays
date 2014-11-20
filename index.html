@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<title>Wavey Days</title>
-	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="/js/velocity.js"></script>
 	<style>
@@ -17,116 +18,129 @@
 	}
 
 	@font-face {
-		font-family: Blue Highway;
+		font-family: Highway;
 		src: url(/fonts/bluehighway.ttf);
 	}
 	</style>
 </head>
 <body>
 	<span id="svgstorage"></span>
-	<div id="container">
 
-		<!-- header including logo and nav -->
+	<!-- header including logo and nav -->
 
-		<header>
-			<a href="/" id="logo">
-				<svg class="logosvg">
-					<use xlink:href="#waveylogo">
-				</svg>
-			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="#" class="active">About</a>
-					</li>
-					<li>
-						<a href="#" class="dropdown">Accomodation</a>
-					</li>
-					<li>
-						<a href="#">Hosts</a>
-					</li>
-					<li>
-						<a href="#">Location</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- lander  -->
-
-		<div id="lander">
-			<svg>
-				<use xlink:href="#waves">
+	<header>
+		<a href="/" id="logo">
+			<svg class="logosvg">
+				<use xlink:href="#waveylogo"></use>
 			</svg>
-			<h1>Wavey Days</h1>
-			<h2><span>Lorem ipsum dolor sit amet</span></h2>
-		</div>
-		
-		<!-- main content -->
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">About</a>
+				</li>
+				<li id="drop">
+					<a href="#" class="dropdown">Accomodation</a>
+					<ul class="secondlist">
+						<li class="seconditem">
+							<a href="#" class="second">HostFinder</a>
+						</li>
+						<li class="seconditem">
+							<a href="#" class="second">Map</a>
+						</li>
+						<li class="seconditem">
+							<a href="#" class="second">Wavey</a>
+						</li>
+						<li class="seconditem">
+							<a href="#" class="second">Days</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Hosts</a>
+				</li>
+				<li>
+					<a href="#">Location</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
 
-		<div id="maincontainer">
-			<article class="mediumblock">
-				<h3 class="underline">About</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quo fuga minima dolores tempora nulla, porro. Ipsa vero iste, odio ab, obcaecati iusto, at non repellendus explicabo necessitatibus minus.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem quaerat doloribus soluta beatae, minus, dicta, aliquam assumenda tempore ipsum id! Repellendus provident expedita earum a voluptates, voluptatum, nemo hic!</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iste corporis accusantium ipsam commodi inventore maiores accusamus modi saepe cum id veniam suscipit quas omnis esse, perspiciatis sequi dolor nihil.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde minima, fugit voluptatum explicabo asperiores animi cum nemo possimus itaque perspiciatis dicta. Reiciendis atque fugit magni eum nemo magnam, cumque rem.</p>
-			</article>
-			<article class="mediumblock">
-				<img src="images/aurora.jpg" title="Aurora Borealis seen in Iceland">
-			</article>
-		</div>
-		
-		<!-- youtube slider -->
+	<!-- lander  -->
 
-		<div id="youtubecontainer">
-			<h3 class="altheading">Wavey Videos</h2>
-			<div class="slidercontainer">
-				Please turn JavaScript on!
-			</div>
-			<div class="buttons">
-				<span class="button"></span>
-				<span class="button"></span>
-				<span class="button"></span>
-				<span class="button"></span>
-				<span class="button"></span>
-				<span class="button"></span>
-			</div>
-		</div>
-
-		<!-- info -->
-
-		<div id="maincontainer">
-			<article class="smallblock">
-				<svg>
-					<use xlink:href="#arctic">
-				</svg>
-				<h3 class="center">Arctic Surfing</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam laudantium, neque ducimus adipisci explicabo vitae excepturi est magnam deserunt pariatur aut incidunt officiis maiores unde accusamus impedit.
-				lorem</p>
-			</article>
-			<article class="smallblock">
-				<svg>
-					<use xlink:href="#student">
-				</svg>
-				<h3 class="center">Learn to Surf</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam et adipisci veniam cum temporibus quia aut, impedit amet! Libero modi quia numquam tempore beatae dolore, deserunt eaque ducimus sapiente.</p>
-			</article>
-			<article class="smallblock">
-				<svg>
-					<use xlink:href="#friends">
-				</svg>
-				<h3 class="center">Make Friends</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt quaerat, ipsa quibusdam, dolorem numquam est dignissimos enim sunt vel recusandae illo consequuntur ea necessitatibus delectus nihil inventore mollitia cupiditate.</p>
-			</article>
-		</div>
-
-		<!-- footer -->
-
-		<footer>
-			<p>Unstad Arctic Surf Unstadveien 105 N-8363 BØSTAD NORWAY P: +47 97 06 12 01 M: hello@unstadsurf.com</p>
-		</footer>
+	<div id="lander">
+		<svg>
+			<use xlink:href="#waves"></use>
+		</svg>
+		<h1 id="title">Wavey Days</h1>
+		<h2><span>Lorem ipsum dolor sit amet</span></h2>
 	</div>
+	
+	<!-- main content -->
+
+	<div class="nopadcontainer">
+		<article class="twoblock" style="align-self: center; padding: 4rem; text-align: right;">
+			<h3 class="underline">About</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quo fuga minima dolores tempora nulla, porro. Ipsa vero iste, odio ab, obcaecati iusto, at non repellendus explicabo necessitatibus minus.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem quaerat doloribus soluta beatae, minus, dicta, aliquam assumenda tempore ipsum id! Repellendus provident expedita earum a voluptates, voluptatum, nemo hic!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iste corporis accusantium ipsam commodi inventore maiores accusamus modi saepe cum id veniam suscipit quas omnis esse, perspiciatis sequi dolor nihil.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde minima, fugit voluptatum explicabo asperiores animi cum nemo possimus itaque perspiciatis dicta. Reiciendis atque fugit magni eum nemo magnam, cumque rem.</p>
+		</article>
+		<figure class="twoblock">
+			<img src="images/surfgroup.jpg" title="Group of Surfers at Wavey Days">
+			<figcaption>Group of Surfers at Wavey Days</figcaption>
+		</figure>
+	</div>
+	
+	<!-- video gallery -->
+
+	<div class="videogallery">
+		<h3 class="fullwidth center">Wavey Videos</h3>
+		<div class="slidercontainer">
+			Please turn JavaScript on!
+		</div>
+		<div class="buttons">
+			<span class="button"></span>
+			<span class="button"></span>
+			<span class="button"></span>
+			<span class="button"></span>
+			<span class="button"></span>
+			<span class="button"></span>
+		</div>
+	</div>
+
+	<!-- info -->
+
+	<div class="maincontainer">
+		<article class="smallblock">
+			<svg>
+				<use xlink:href="#arctic"></use>
+			</svg>
+			<h3 class="center">Arctic Surfing</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam laudantium, neque ducimus adipisci explicabo vitae excepturi est magnam deserunt pariatur aut incidunt officiis maiores unde accusamus impedit.
+			lorem</p>
+		</article>
+		<article class="smallblock">
+			<svg>
+				<use xlink:href="#student"></use>
+			</svg>
+			<h3 class="center">Learn to Surf</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam et adipisci veniam cum temporibus quia aut, impedit amet! Libero modi quia numquam tempore beatae dolore, deserunt eaque ducimus sapiente.</p>
+		</article>
+		<article class="smallblock">
+			<svg>
+				<use xlink:href="#friends"></use>
+			</svg>
+			<h3 class="center">Make Friends</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt quaerat, ipsa quibusdam, dolorem numquam est dignissimos enim sunt vel recusandae illo consequuntur ea necessitatibus delectus nihil inventore mollitia cupiditate.</p>
+		</article>
+	</div>
+
+	<!-- footer -->
+
+	<footer>
+		<p>Unstad Arctic Surf Unstadveien 105 N-8363 BØSTAD NORWAY P: +47 97 06 12 01 M: hello@unstadsurf.com</p>
+	</footer>
 
 	<!-- javascript files -->
 
