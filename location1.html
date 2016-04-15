@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wavey Days</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="/js/velocity.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFbDU5NuzzffrKhV5Lyqbd3FXg5Jri0k8"></script>
+	<link rel="icon" type="image/png" href="images/favicon/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <script>
+    var MY_MAPTYPE_ID = 'steez';
+
+    function initialize() {
+
+        var featureOpts = [
+            {
+                elementType: 'all',
+                stylers: [
+                { color: '#FFFFFF' }
+                ]
+            },
+            {
+                featureType: 'all',
+                stylers: [
+                { color: '#00FF00' }
+                ]
+            },
+            {
+                featureType: 'water',
+                stylers: [
+                { color: '#0000FF' }
+                ]
+            },
+        ];   
+
+        var mapOptions = {
+          center: { lat: 64.931, lng: -19.021},
+          zoom: 6,
+          mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.TERRAIN, MY_MAPTYPE_ID]
+        },
+        mapTypeId: MY_MAPTYPE_ID
+    };
+
+    var map = new google.maps.Map(document.getElementById('mappy'),
+    mapOptions);
+    
+    var styledMapOptions = {
+        name: 'Wavey Days'
+    };
+
+    var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+    map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+    }
+        
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <style>
+      #mappy{height:100%;width:100%;}
+    </style>
+</head>
+<body>
+
+
+	<span id="svgstorage"></span>
+	
+	<!-- header including logo and nav -->
+	<header>
+		<a href="/" id="logo">
+			<svg class="logosvg">
+				<use xlink:href="#waveylogo"></use>
+			</svg>
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="/">About</a>
+				</li>
+				<li id="drop">
+                    <a href="#" class="dropdown">Accomodation</a>
+                    <ul class="secondlist">
+                        <li class="seconditem">
+                            <a href="/accomodation.html#Stykkisholmur" class="second">Stykkisholmur</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="/accomodation.html#Akranes" class="second">Akranes</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="/accomodation.html#Eyrarbakki" class="second">Eyrarbakki</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="/accomodation.html#Keflavik" class="second">Keflavik</a>
+                        </li>
+                    </ul>
+                </li>
+				<li>
+					<a href="/hosts.html">Hosts</a>	
+				</li>
+				<li>
+					<a href="/location.html" class="active">Location</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- lander  -->
+	<div class="lander" style="background-image: url('/images/location.jpg')";>
+		<svg class="fade">
+			<use xlink:href="#mapsvg"></use>
+		</svg>
+		<h1 class="fade">Location</h1>
+		<h2 class="fade">Lorem ipsum dolor sit amet</h2>
+		<a href="#" class="arrow">
+		    <svg>
+		    	<use xlink:href="#arrow"></use>
+		    </svg>
+  		</a>
+	</div>
+
+	<div class="divider">
+        <a href="#" class="bookbutton">
+            <svg>
+                <use xlink:href="#calendar">
+                </use>
+            </svg>
+            <small class="fullwidth center">Booking</small>
+        </a>
+    </div>
+
+	<!-- main content -->
+<!-- 	<div class="nopadcontainer" id="jump"> -->
+        <div id="mappy">
+            hello
+        </div>
+ <!--    </div> -->
+	
+	<!-- footer -->
+
+    <footer>
+        <div class="twittercontainer">
+            <svg>
+                <use xlink:href="#twitter"></use>
+            </svg>
+            <p id="tweet">Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></p>
+        </div>
+        <div class="socialmedia">
+            <a href="#">
+                <svg>
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#pinterest"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="contact">
+            <span>Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></span>
+            <div class="vcard">
+                <span class="org">Wavey Days</span>
+                <span class="adr">
+                <span class="street-address">Borgartun 34</span>
+                <span class="locality">105 REYKJAVÍK</span>, <span class="region">IS</span>
+                <span class="postal-code">Pósthólf 1034</span>
+               </span>
+            </div> 
+        </div>
+    </footer>
+
+	<!-- javascript files -->
+	<script src="/js/global.js"></script>
+    <script src="/js/twitter.js"></script>
+    <!-- <script src="/js/jsonimport.js"></script>-->
+	<script>
+	$("#svgstorage").load("logo.html");
+	</script>
+
+</body>
+</html>
+

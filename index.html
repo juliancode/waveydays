@@ -1,157 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Wavey Days</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/js/velocity.js"></script>
-	<style>
-	@font-face {
-    	font-family: Coolvetica Rg;
-    	src: url(/fonts/coolvetica.ttf);
-	}
-
-	@font-face {
-		font-family: Roboto Condensed;
-	    src: url(/fonts/roboto.ttf);
-	}
-
-	@font-face {
-		font-family: Highway;
-		src: url(/fonts/bluehighway.ttf);
-	}
-	</style>
+    <title>Wavey Days</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
-	<span id="svgstorage"></span>
+    <span id="svgstorage"></span>
 
-	<!-- header including logo and nav -->
+    <!-- header including logo and nav -->
+    <header>
+        <a href="/" id="logo">
+            <svg class="logosvg">
+                <use xlink:href="#waveylogo"></use>
+            </svg>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/" class="active link">About</a>
+                </li>
+                <li id="drop">
+                    <a href="#" class="dropdown link">Accomodation</a>
+                    <ul class="secondlist">
+                        <li class="seconditem">
+                            <a href="accomodation.html#Stykkisholmur" class="second">Stykkisholmur</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Akranes" class="second">Akranes</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Eyrarbakki" class="second">Eyrarbakki</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Keflavik" class="second">Keflavik</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="hosts.html" class="link">Hosts</a>
+                </li>
+                <li>
+                    <a href="location.html" class="link">Location</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-	<header>
-		<a href="/" id="logo">
-			<svg class="logosvg">
-				<use xlink:href="#waveylogo"></use>
-			</svg>
-		</a>
-		<nav>
-			<ul>
-				<li>
-					<a href="#" class="active">About</a>
-				</li>
-				<li id="drop">
-					<a href="#" class="dropdown">Accomodation</a>
-					<ul class="secondlist">
-						<li class="seconditem">
-							<a href="#" class="second">HostFinder</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Map</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Wavey</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Days</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Hosts</a>
-				</li>
-				<li>
-					<a href="#">Location</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+  <!-- lander  -->
+    <div class="homelander">
+        <svg class="fade">
+            <use xlink:href="#waves"></use>
+        </svg>
+        <h1 id="title" class="fade">Wavey Days</h1>
+        <h2 class="fade">Lorem ipsum dolor sit amet</h2>
+        <a href="#" class="arrow">
+            <svg>
+                <use xlink:href="#arrow"></use>
+            </svg>
+        </a>
+    </div>
 
-	<!-- lander  -->
+    <div class="divider">
+        <a class="bookbutton">
+            <svg>
+                <use xlink:href="#calendar">
+                </use>
+            </svg>
+            <small class="fullwidth center">Booking
+            </small>
+        </a>
+    </div>
 
-	<div id="homelander">
-		<svg>
-			<use xlink:href="#waves"></use>
-		</svg>
-		<h1 id="title">Wavey Days</h1>
-		<h2><span>Lorem ipsum dolor sit amet</span></h2>
-	</div>
-	
-	<!-- main content -->
+    <!-- main content -->
 
-	<div class="nopadcontainer">
-		<article class="twoblock" style="align-self: center; padding: 4rem; text-align: right;">
-			<h3 class="underline">About</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quo fuga minima dolores tempora nulla, porro. Ipsa vero iste, odio ab, obcaecati iusto, at non repellendus explicabo necessitatibus minus.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem quaerat doloribus soluta beatae, minus, dicta, aliquam assumenda tempore ipsum id! Repellendus provident expedita earum a voluptates, voluptatum, nemo hic!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iste corporis accusantium ipsam commodi inventore maiores accusamus modi saepe cum id veniam suscipit quas omnis esse, perspiciatis sequi dolor nihil.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde minima, fugit voluptatum explicabo asperiores animi cum nemo possimus itaque perspiciatis dicta. Reiciendis atque fugit magni eum nemo magnam, cumque rem.</p>
-		</article>
-		<figure class="twoblock">
-			<img src="images/surfgroup.jpg" title="Group of Surfers at Wavey Days">
-			<figcaption>Group of Surfers at Wavey Days</figcaption>
-		</figure>
-	</div>
-	
-	<!-- video gallery -->
+    <div class="nopadcontainer" id="jump">
+        <article class="twoblock text" style="order: -1">
+            <h3 class="fullwidth">About</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quo fuga minima dolores tempora nulla, porro. Ipsa vero <a href="#" class="tool-tip" data-toggle="tooltip" title="Lorem ipsum dolor sit amet">iste</a>, odio ab, obcaecati iusto, at non repellendus explicabo necessitatibus minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem quaerat doloribus soluta beatae, <a href="#" class="tool-tip" data-toggle="tooltip" title="Lorem ipsum dolor sit amet">minus</a> dicta, aliquam assumenda tempore!</p>
+            <a href="location.html" class="hostbtnleft">Weather</a>
+        </article>
+        <figure class="twoblock image" style="background-image: url('images/surfgroup.jpg');"></figure>
+    </div>
+  
+  <!-- video gallery -->
 
-	<div class="videogallery">
-		<h3 class="fullwidth center">Wavey Videos</h3>
-		<div class="slidercontainer">
-			Please turn JavaScript on!
-		</div>
-		<div class="buttons">
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-		</div>
-	</div>
+    <div class="videogallery">
+        <div class="slidercontainer">
+            <p>Please turn JavaScript on!</p>
+        </div>
+        <div class="buttons">
+            <span class="button" role="button" tabindex="0"></span>
+            <span class="button" role="button" tabindex="0"></span>
+            <span class="button" role="button" tabindex="0"></span>
+            <span class="button" role="button" tabindex="0"></span>
+            <span class="button" role="button" tabindex="0"></span>
+            <span class="button" role="button" tabindex="0"></span>
+        </div>
+    </div>
 
-	<!-- info -->
+  <!-- info -->
 
-	<div class="maincontainer">
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#arctic"></use>
-			</svg>
-			<h3 class="center">Arctic Surfing</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam laudantium, neque ducimus adipisci explicabo vitae excepturi est magnam deserunt pariatur aut incidunt officiis maiores unde accusamus impedit.
-			lorem</p>
-		</article>
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#student"></use>
-			</svg>
-			<h3 class="center">Learn to Surf</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam et adipisci veniam cum temporibus quia aut, impedit amet! Libero modi quia numquam tempore beatae dolore, deserunt eaque ducimus sapiente.</p>
-		</article>
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#friends"></use>
-			</svg>
-			<h3 class="center">Make Friends</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt quaerat, ipsa quibusdam, dolorem numquam est dignissimos enim sunt vel recusandae illo consequuntur ea necessitatibus delectus nihil inventore mollitia cupiditate.</p>
-		</article>
-	</div>
+    <div class="maincontainer">
+        <article class="smallblock">
+            <svg>
+                <use xlink:href="#arctic"></use>
+            </svg>
+            <h3 class="center">Arctic Surfing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam <a href="#" class="tool-tip" data-toggle="tooltip" title="Lorem ipsum dolor sit amet">excepturi</a> neque ducimus adipisci explicabo vitae est magnam deserunt pariatur aut incidunt officiis maiores unde accusamus impedit.</p>
+        </article>
+        <article class="smallblock">
+            <svg>
+                <use xlink:href="#student"></use>
+            </svg>
+            <h3 class="center">Learn to Surf</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam et adipisci veniam <a href="#" class="tool-tip" data-toggle="tooltip" title="Lorem ipsum dolor sit amet">cum</a> temporibus quia aut, impedit amet! Libero modi quia numquam tempore beatae dolore, deserunt eaque ducimus sapiente.</p>
+        </article>
+        <article class="smallblock">
+            <svg>
+                <use xlink:href="#friends"></use>
+            </svg>
+            <h3 class="center">Make Friends</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt quaerat, ipsa quibusdam, dolorem numquam est dignissimos <a href="#" class="tool-tip" data-toggle="tooltip" title="Lorem ipsum dolor sit amet">enim</a> sunt vel recusandae illo consequuntur ea necessitatibus delectus nihil inventore mollitia cupiditate.</p>
+        </article>
+    </div>
 
-	<!-- footer -->
+  <!-- footer -->
 
-	<footer>
-		<p>Unstad Arctic Surf Unstadveien 105 N-8363 BØSTAD NORWAY P: +47 97 06 12 01 M: hello@unstadsurf.com</p>
-	</footer>
+    <footer>
+        <div class="twittercontainer">
+            <svg>
+                <use xlink:href="#twitter"></use>
+            </svg>
+            <p id="tweet">Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></p>
+        </div>
+        
+        <div class="socialmedia">
+            <a href="#">
+                <svg>
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#pinterest"></use>
+                </svg>
+            </a>
+        </div>
 
-	<!-- javascript files -->
+        <div class="contact">
+            <span>Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></span>
+            <div class="vcard">
+                <span class="org">Wavey Days</span>
+                <span class="adr">
+                <span class="street-address">Borgartun 34</span>
+                <span class="locality">105 REYKJAVÍK</span>, <span class="region">IS</span>
+                <span class="postal-code">Pósthólf 1034</span>
+               </span>
+            </div> 
+        </div>
+    </footer>
 
-<script src="/js/global.js"></script>
-<script src="http://gdata.youtube.com/feeds/users/surfer/uploads?alt=json-in-script&callback=populateVideos&max-results=6"></script>
+    <!-- javascript files -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/twitter.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="http://gdata.youtube.com/feeds/users/surfer/uploads?alt=json-in-script&callback=populateVideos&max-results=6"></script>
 
 <!-- load svgs -->
 <script>
 $("#svgstorage").load("logo.html");
+
+$(document).ready(function() {  
+    $('.tool-tip').tooltip();
+});
 </script>
 
 </body>
 </html>
-

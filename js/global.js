@@ -1,3 +1,76 @@
+// modal javascript
+// ============
+
+$('.contactbtn').click(function(){
+	openModal();
+});
+
+$('.closebutton').click(function(){
+	closeModal();
+});
+
+function openModal(){
+	$('body').addClass("modal-open");
+	$('.modal-backdrop').addClass("block");
+	$('.modal-content').addClass("block");
+}
+
+function closeModal(){
+	$('body').removeClass("modal-open");
+	$('.modal-backdrop').removeClass("block");
+	$('.modal-content').removeClass("block");
+}
+
+function sendMsg(){
+	$('body').removeClass("modal-open");
+	$('.modal-backdrop').removeClass("block");
+	$('.modal-content').removeClass("block");
+	alert("Thanks for your message!");
+}
+
+// fade out scroll
+// ===============
+
+var c = 0;
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 450 && c === 0){
+        fadeOut();
+        c = 1;
+    }
+    if ($(window).scrollTop() < 449 && c === 1){
+		fadeIn();
+		c = 0;
+	}
+});
+
+
+function fadeOut() {
+	$(".fade").velocity({top: "-20%", opacity: "0"}, "250");
+}
+
+function fadeIn() {
+	$(".fade").velocity({top: "-5%", opacity: "1"}, "250");
+}
+
+
+// scroll animation
+// ================
+
+function scrolllTo(theElement) {
+	$(theElement).velocity("scroll", {duration: 500, easing: "ease"})
+}
+
+$(".arrow").click(function() {
+	scrolllTo(jump);
+});
+
+// load svgs
+// =========
+
+$("#svgstorage").load("logo.html");
+
+
 // youtube slider
 // ==============
 
@@ -13,7 +86,7 @@ function populateVideos(data) {
     for (i = 0; i < data.feed.entry.length; i++) {
         entriesID = entries[i].id.$t.substring(38);
 
-        output += '<iframe id="child" src="//www.youtube.com/embed/' + entriesID + '" frameborder="0" allowfullscreen></iframe>';
+        output += '<iframe id="child" src="http://www.youtube.com/embed/' + entriesID + '" frameborder="0" allowfullscreen></iframe>';
     }
     $(".slidercontainer").html(output);
 }

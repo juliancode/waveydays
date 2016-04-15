@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wavey Days</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<span id="svgstorage"></span>
+
+    <!-- modal --> 
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <div class="modal-head">
+            <a><img src="images/close.png" class="closebutton"></a> 
+        </div>
+        <form id="contactform" method="POST" class="modal-body">
+            <h2 class="fullwidth center">Contact</h2>
+            <span>Name: </span>
+            <input type="text" name="name" placeholder="Joe Blogs" required>
+            <span>Email: </span>
+            <input type="email" name="email" placeholder="joe@blogs.com" required>
+            <span>Message:</span>
+            <textarea name="message" rows="4" cols="50" required></textarea>
+            <input type="submit" value="SEND">
+        </form>
+    </div>
+
+	<!-- header including logo and nav -->
+	<header>
+        <a href="index.html" id="logo">
+            <svg class="logosvg">
+                <use xlink:href="#waveylogo"></use>
+            </svg>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="link">About</a>
+                </li>
+                <li id="drop">
+                    <a href="#" class="dropdown link">Accomodation</a>
+                    <ul class="secondlist">
+                        <li class="seconditem">
+                            <a href="accomodation.html#Stykkisholmur" class="second">Stykkisholmur</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Akranes" class="second">Akranes</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Eyrarbakki" class="second">Eyrarbakki</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Keflavik" class="second">Keflavik</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="hosts.html" class="active link">Hosts</a>
+                </li>
+                <li>
+                    <a href="location.html" class="link">Location</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+	<!-- lander  -->
+	<div class="lander" <div class="lander" style="background-image: url('images/hosts.jpg')";>
+		<svg class="fade">
+			<use xlink:href="#hosts"></use>
+		</svg>
+		<h1 class="fade">Hosts</h1>
+		<h2 class="fade">Lorem ipsum dolor sit amet</h2>
+		<a href="#" class="arrow">
+		    <svg>
+		    	<use xlink:href="#arrow"></use>
+		    </svg>
+  		</a>
+	</div>
+
+	<div class="divider">
+        <a class="bookbutton">
+            <svg>
+                <use xlink:href="#calendar">
+                </use>
+            </svg>
+            <small class="fullwidth center">Booking</small>
+        </a>
+    </div>
+
+	<!-- main content -->
+	<div class="maincontainer" id="jump">
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Will Bevan</h3>
+            <img class="round" src="images/will.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam laudantium, neque ducimus adipisci explicabo vitae excepturi est magnam deserunt pariatur aut incidunt officiis maiores unde.</p>
+            <div class="pics">
+            	<a href="images/willcottage1.jpg" data-lightbox="will" class="thumbnail">
+            		<img src="images/thumb/willcottage1.jpg">
+            	</a>
+            	<a href="images/willcottage2.jpg" data-lightbox="will" class="thumbnail">
+            		<img src="images/thumb/willcottage2.jpg">
+            	</a>
+            	<a href="images/willcottage3.jpg" data-lightbox="will" class="thumbnail">
+            		<img src="images/thumb/willcottage3.jpg">
+            	</a>
+            	<a href="images/willcottage4.jpg" data-lightbox="will" class="thumbnail">
+            		<img src="images/thumb/willcottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Lucy Henfield</h3>
+            <img class="round" src="images/lucy.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut voluptatum optio qui deserunt, fuga doloribus ducimus error quo aliquid! Porro possimus voluptas ratione nam nemo quas quidem maxime odit!</p>
+        	<div class="pics">
+            	<a href="images/lucycottage1.jpg" data-lightbox="lucy" class="thumbnail">
+            		<img src="images/thumb/lucycottage1.jpg">
+            	</a>
+            	<a href="images/lucycottage2.jpg" data-lightbox="lucy" class="thumbnail">
+            		<img src="images/thumb/lucycottage2.jpg">
+            	</a>
+            	<a href="images/lucycottage3.jpg" data-lightbox="lucy" class="thumbnail">
+            		<img src="images/thumb/lucycottage3.jpg">
+            	</a>
+            	<a href="images/lucycottage4.jpg" data-lightbox="lucy" class="thumbnail">
+            		<img src="images/thumb/lucycottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Anders Johnson</h3>
+            <img class="round" src="images/anders.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quaerat quo provident, ex excepturi odit culpa. A sint assumenda, vitae consequuntur veritatis quos dolorum nobis. Exercitationem aut, numquam quaerat officia.</p>
+            <div class="pics">
+            	<a href="images/anderscottage1.jpg" data-lightbox="anders" class="thumbnail">
+            		<img src="images/thumb/anderscottage1.jpg">
+            	</a>
+            	<a href="images/anderscottage2.jpg" data-lightbox="anders" class="thumbnail">
+            		<img src="images/thumb/anderscottage2.jpg">
+            	</a>
+            	<a href="images/anderscottage3.jpg" data-lightbox="anders" class="thumbnail">
+            		<img src="images/thumb/anderscottage3.jpg">
+            	</a>
+            	<a href="images/anderscottage4.jpg" data-lightbox="anders" class="thumbnail">
+            		<img src="images/thumb/anderscottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+    </div>
+    	<div class="nopadcontainer">
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Sarah Thomas</h3>
+            <img class="round" src="images/sarah.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo aliquam non itaque enim officia facilis consequatur possimus. Possimus est beatae mollitia eum dolorum laboriosam inventore fugit placeat at expedita!</p>
+        	<div class="pics">
+            	<a href="images/sarahcottage1.jpg" data-lightbox="sarah" class="thumbnail">
+            		<img src="images/thumb/sarahcottage1.jpg">
+            	</a>
+            	<a href="images/sarahcottage2.jpg" data-lightbox="sarah" class="thumbnail">
+            		<img src="images/thumb/sarahcottage2.jpg">
+            	</a>
+            	<a href="images/sarahcottage3.jpg" data-lightbox="sarah" class="thumbnail">
+            		<img src="images/thumb/sarahcottage3.jpg">
+            	</a>
+            	<a href="images/sarahcottage4.jpg" data-lightbox="sarah" class="thumbnail">
+            		<img src="images/thumb/sarahcottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Andrew White</h3>
+            <img class="round" src="images/andrew.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente tenetur possimus, excepturi qui ab accusamus eos quis id. Obcaecati, voluptas harum blanditiis libero dolorem nemo quia, veniam distinctio ab esse.</p>
+            <div class="pics">
+            	<a href="images/andrewcottage1.jpg" data-lightbox="andrew" class="thumbnail">
+            		<img src="images/thumb/andrewcottage1.jpg">
+            	</a>
+            	<a href="images/andrewcottage2.jpg" data-lightbox="andrew" class="thumbnail">
+            		<img src="images/thumb/andrewcottage2.jpg">
+            	</a>
+            	<a href="images/andrewcottage3.jpg" data-lightbox="andrew" class="thumbnail">
+            		<img src="images/thumb/andrewcottage3.jpg">
+            	</a>
+            	<a href="images/andrewcottage4.jpg" data-lightbox="andrew" class="thumbnail">
+            		<img src="images/thumb/andrewcottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+        <article class="smallblock" style="border: 0">
+            <h3 class="center">Amanda Powell</h3>
+            <img class="round" src="images/amanda.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi repellat nisi ad blanditiis officia consectetur, aspernatur doloremque ab ratione nesciunt! Explicabo, inventore unde magni facere reiciendis quam vero.</p>
+            <div class="pics">
+            	<a href="images/amandacottage1.jpg" data-lightbox="amanda" class="thumbnail">
+            		<img src="images/thumb/amandacottage1.jpg">
+            	</a>
+            	<a href="images/amandacottage2.jpg" data-lightbox="amanda" class="thumbnail">
+            		<img src="images/thumb/amandacottage2.jpg">
+            	</a>
+            	<a href="images/amandacottage3.jpg" data-lightbox="amanda" class="thumbnail">
+            		<img src="images/thumb/amandacottage3.jpg">
+            	</a>
+            	<a href="images/amandacottage4.jpg" data-lightbox="amanda" class="thumbnail">
+            		<img src="images/thumb/amandacottage4.jpg">
+            	</a>
+            </div>
+            <a class="contactbtn" role="button">Contact</a>
+        </article>
+    </div>
+	
+	<!-- footer -->
+
+    <footer>
+        <div class="twittercontainer">
+            <svg>
+                <use xlink:href="#twitter"></use>
+            </svg>
+            <p id="tweet">Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></p>
+        </div>
+        
+        <div class="socialmedia">
+            <a href="#">
+                <svg>
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#pinterest"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="contact">
+            <span>Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></span>
+            <div class="vcard">
+                <span class="org">Wavey Days</span>
+                <span class="adr">
+                <span class="street-address">Borgartun 34</span>
+                <span class="locality">105 REYKJAVÍK</span>, <span class="region">IS</span>
+                <span class="postal-code">Pósthólf 1034</span>
+               </span>
+            </div> 
+        </div>
+    </footer>
+
+	<!-- javascript files -->
+
+    <script src="js/velocity.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/twitter.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/global.js"></script>
+<!-- load svgs -->
+<script>
+$("#svgstorage").load("logo.html");
+</script>
+
+</body>
+</html>
+

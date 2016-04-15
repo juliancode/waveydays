@@ -1,151 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Wavey Days</title>
-	<meta charset="utf-8">
+    <title>Wavey Days</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/js/velocity.js"></script>
-	<style>
-	@font-face {
-    	font-family: Coolvetica Rg;
-    	src: url(/fonts/coolvetica.ttf);
-	}
-
-	@font-face {
-		font-family: Roboto Condensed;
-	    src: url(/fonts/roboto.ttf);
-	}
-
-	@font-face {
-		font-family: Highway;
-		src: url(/fonts/bluehighway.ttf);
-	}
-	</style>
+	<link rel="icon" type="image/png" href="images/favicon/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
 	<span id="svgstorage"></span>
 
 	<!-- header including logo and nav -->
-
-	<header>
-		<a href="/" id="logo">
-			<svg class="logosvg">
-				<use xlink:href="#waveylogo"></use>
-			</svg>
-		</a>
-		<nav>
-			<ul>
-				<li>
-					<a href="#" class="active">About</a>
-				</li>
-				<li id="drop">
-					<a href="#" class="dropdown">Accomodation</a>
-					<ul class="secondlist">
-						<li class="seconditem">
-							<a href="#" class="second">HostFinder</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Map</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Wavey</a>
-						</li>
-						<li class="seconditem">
-							<a href="#" class="second">Days</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Hosts</a>
-				</li>
-				<li>
-					<a href="#">Location</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
+		   <header>
+        <a href="index.html" id="logo">
+            <svg class="logosvg">
+                <use xlink:href="#waveylogo"></use>
+            </svg>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" class="link">About</a>
+                </li>
+                <li id="drop">
+                    <a href="#" class="dropdown active link">Accomodation</a>
+                    <ul class="secondlist">
+                        <li class="seconditem">
+                            <a href="accomodation.html#Stykkisholmur" class="second">Stykkisholmur</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Akranes" class="second">Akranes</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Eyrarbakki" class="second">Eyrarbakki</a>
+                        </li>
+                        <li class="seconditem">
+                            <a href="accomodation.html#Keflavik" class="second">Keflavik</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="hosts.html" class="link">Hosts</a>
+                </li>
+                <li>
+                    <a href="location.html" class="link">Location</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 	<!-- lander  -->
-
-	<div id="lander">
-		<svg>
-			<use xlink:href="#waves"></use>
+	<div class="lander" style="background-image: url('images/logcabin.jpg')";>
+		<svg class="fade">
+			<use xlink:href="#accomodation"></use>
 		</svg>
-		<h1 id="title">Wavey Days</h1>
-		<h2><span>Lorem ipsum dolor sit amet</span></h2>
+		<h1 class="fade">Accomodation</h1>
+		<h2 class="fade">Lorem ipsum dolor sit amet</h2>
+		<a href="#" class="arrow">
+		    <svg>
+		    	<use xlink:href="#arrow"></use>
+		    </svg>
+  		</a>
 	</div>
-	
+
+	<div class="divider">
+        <a href="#" class="bookbutton">
+            <svg>
+                <use xlink:href="#calendar">
+                </use>
+            </svg>
+            <small class="fullwidth center">        Booking
+            </small>
+        </a>
+    </div>
+
 	<!-- main content -->
+	<div class="nopadcontainer" id="jump">
+		<figure id="Stykkisholmur" class="twoblock image" style="background-image: url('images/Stykkisholmur.jpg');"></figure>
+		<article class="twoblock text">
+			<h3 class="fullwidth">Stykkisholmur</h3>
+			<p>Stykkishólmur is a town and municipality situated in the western part of Iceland, to the north of the Snæfellsnes peninsula. It is a center of services and commerce for the area. Most of the people make their living from fishing and tourism.</p>
+			<a href="hosts.html" class="hostbtnright">Find Host</a>
+		</article>
+	</div>
 
 	<div class="nopadcontainer">
-		<article class="twoblock" style="align-self: center; padding: 4rem; text-align: right;">
-			<h3 class="underline">About</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt saepe quo fuga minima dolores tempora nulla, porro. Ipsa vero iste, odio ab, obcaecati iusto, at non repellendus explicabo necessitatibus minus.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatem quaerat doloribus soluta beatae, minus, dicta, aliquam assumenda tempore ipsum id! Repellendus provident expedita earum a voluptates, voluptatum, nemo hic!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iste corporis accusantium ipsam commodi inventore maiores accusamus modi saepe cum id veniam suscipit quas omnis esse, perspiciatis sequi dolor nihil.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde minima, fugit voluptatum explicabo asperiores animi cum nemo possimus itaque perspiciatis dicta. Reiciendis atque fugit magni eum nemo magnam, cumque rem.</p>
+		<article class="twoblock text">
+			<h3 class="fullwidth">Akranes</h3>
+			<p>Akranes is a port town and municipality on the west coast of Iceland, around 20 miles north of the capital Reykjavík. The town is expected to grow further in the coming years because of growing industry and improvements of transportation to the Reykjavík area, following the construction of the Hvalfjörður Tunnel, one of the world's longest underwater road tunnels.</p>
+			<a href="hosts.html" class="hostbtnleft">Find Host</a>
 		</article>
-		<figure class="twoblock">
-			<img src="images/surfgroup.jpg" title="Group of Surfers at Wavey Days">
-			<figcaption>Group of Surfers at Wavey Days</figcaption>
-		</figure>
+		<figure class="image twoblock" id="Akranes" style="background-image: url('images/Akranes.jpg');"></figure>
+	</div>
+
+	<div class="nopadcontainer">
+		<figure class="image twoblock" id="Eyrarbakki" style="background-image: url('images/Eyrarbakki.jpg');"></figure>
+		<article class="twoblock text">
+			<h3 class="fullwidth">Eyrarbakki</h3>
+			<p>Eyrarbakki is a fishing village on the south coast of Iceland with a population of about 570 people. The village is founded on the Great Þjórsá Lava.</p>
+			<a href="hosts.html" class="hostbtnright">Find Host</a>
+		</article>
+	</div>
+
+	<div class="nopadcontainer">
+		<article class="twoblock text">
+			<h3 class="fullwidth">Keflavik</h3>
+			<p>Keflavík is a town in the Reykjanes region in southwest Iceland. In 1995 it merged with Njarðvík and Hafnir to form a municipality called Reykjanesbær with a population of 13,971.</p>
+			<a href="hosts.html" class="hostbtnleft">Find Host</a>
+		</article>
+		<figure class="image twoblock" id="Keflavik" style="background-image: url('images/Keflavik.jpg');"></figure>
 	</div>
 	
-	<!-- video gallery -->
-
-	<div class="videogallery">
-		<h3 class="fullwidth center">Wavey Videos</h3>
-		<div class="slidercontainer">
-			Please turn JavaScript on!
-		</div>
-		<div class="buttons">
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-			<span class="button"></span>
-		</div>
-	</div>
-
-	<!-- info -->
-
-	<div class="maincontainer">
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#arctic"></use>
-			</svg>
-			<h3 class="center">Arctic Surfing</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, omnis veritatis laboriosam laudantium, neque ducimus adipisci explicabo vitae excepturi est magnam deserunt pariatur aut incidunt officiis maiores unde accusamus impedit.
-			lorem</p>
-		</article>
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#student"></use>
-			</svg>
-			<h3 class="center">Learn to Surf</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam et adipisci veniam cum temporibus quia aut, impedit amet! Libero modi quia numquam tempore beatae dolore, deserunt eaque ducimus sapiente.</p>
-		</article>
-		<article class="smallblock">
-			<svg>
-				<use xlink:href="#friends"></use>
-			</svg>
-			<h3 class="center">Make Friends</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis incidunt quaerat, ipsa quibusdam, dolorem numquam est dignissimos enim sunt vel recusandae illo consequuntur ea necessitatibus delectus nihil inventore mollitia cupiditate.</p>
-		</article>
-	</div>
-
 	<!-- footer -->
 
-	<footer>
-		<p>Unstad Arctic Surf Unstadveien 105 N-8363 BØSTAD NORWAY P: +47 97 06 12 01 M: hello@unstadsurf.com</p>
-	</footer>
+    <footer>
+        <div class="twittercontainer">
+            <svg>
+                <use xlink:href="#twitter"></use>
+            </svg>
+            <p id="tweet">Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></p>
+        </div>
+        
+        <div class="socialmedia">
+            <a href="#">
+                <svg>
+                    <use xlink:href="#facebook"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#twitter"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#instagram"></use>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <use xlink:href="#pinterest"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="contact">
+            <span>Follow us at <a href="http://twitter.com/arcticsurfers">@arcticsurfers</a></span>
+            <div class="vcard">
+                <span class="org">Wavey Days</span>
+                <span class="adr">
+                <span class="street-address">Borgartun 34</span>
+                <span class="locality">105 REYKJAVÍK</span>, <span class="region">IS</span>
+                <span class="postal-code">Pósthólf 1034</span>
+               </span>
+            </div> 
+        </div>
+    </footer>
 
 	<!-- javascript files -->
-
-<script src="/js/global.js"></script>
-<script src="http://gdata.youtube.com/feeds/users/surfer/uploads?alt=json-in-script&callback=populateVideos&max-results=6"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/velocity.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/twitter.js"></script>
 
 <!-- load svgs -->
 <script>

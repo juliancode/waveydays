@@ -32,7 +32,26 @@ grunt.initConfig({
 		    files: ['C:/wamp/www/flexy/css/*.css'],
 		    tasks: ['autoprefixer'],
 	    },
+	    jade: {
+	    	files: ['C:/wamp/www/flexy/jade/*.jade'],
+	    	tasks: ['jade'],
+	    }
 	},
+
+	// jade: {
+	// 	compile: {
+	// 		options: {
+	// 			pretty: true,
+	// 			data: {
+	// 				debug: true,
+	// 			}
+	// 		},
+	// 		files: {
+	// 			'C:/wamp/www/flexy/index.html': 'C:/wamp/www/flexy/jade/index.jade',
+	// 			'C:/wamp/www/flexy/random.html': 'C:/wamp/www/flexy/jade/random.jade'
+	// 		}
+	// 	}
+	// },
 
 	express: {
 		all: {
@@ -53,11 +72,12 @@ grunt.initConfig({
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
 
 
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'autoprefixer'])
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'jade'])
   grunt.registerTask('server', ['express', 'watch'])
 
 
