@@ -77,16 +77,15 @@ $("#svgstorage").load("logo.html");
 function populateVideos(data) {
     "use strict";
     // variables
-    var entries = data.feed.entry,
-        output = "",
-        i = 0,
-        entriesID = "";
+    console.log();
+        var output = "",
+        i = 0;
 
     // loops through data feed getting videos and adding to output variable
-    for (i = 0; i < data.feed.entry.length; i++) {
-        entriesID = entries[i].id.$t.substring(38);
+    for (i = 0; i < data.items.length; i++) {
+        var videoId = data.items[i].snippet.resourceId.videoId
 
-        output += '<iframe id="child" src="http://www.youtube.com/embed/' + entriesID + '" frameborder="0" allowfullscreen></iframe>';
+        output += '<iframe id="child" src="http://www.youtube.com/embed/' + videoId + '" frameborder="0" allowfullscreen></iframe>';
     }
     $(".slidercontainer").html(output);
 }
@@ -98,7 +97,6 @@ $(document).ready(function() {
 	button3 = $(".button:nth-child(3)"),
 	button4 = $(".button:nth-child(4)"),
 	button5 = $(".button:nth-child(5)"),
-	button6 = $(".button:nth-child(6)"),
 	allButtons = $(".button:nth-child(1),.button:nth-child(2),.button:nth-child(3),.button:nth-child(4),.button:nth-child(5),.button:nth-child(6)"),
 
 	child1 = $("#child:nth-child(1)"),
