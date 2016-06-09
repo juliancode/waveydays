@@ -319,7 +319,7 @@ nav a.link:hover, nav ul li a.link.active {
     height: 200%; }
 
 footer {
-  height: 30%;
+  padding: 25px 0;
   background-color: #000;
   background-image: url("../images/footerbg.png");
   background-repeat: repeat-x;
@@ -347,7 +347,7 @@ footer {
   width: 30%;
   background: #333;
   border-radius: 0.5rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .twittercontainer {
       width: 40%; } }
   @media screen and (max-width: 850px) {
@@ -382,6 +382,8 @@ footer {
   width: 20%; }
 
 .contact {
+  display: flex;
+  margin-top: 25px;
   width: 60%;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -389,7 +391,7 @@ footer {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .contact {
       width: 80%; } }
   @media screen and (max-width: 850px) {
@@ -425,7 +427,7 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 30%; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .socialmedia {
       width: 40%; } }
   @media screen and (max-width: 850px) {
@@ -555,7 +557,7 @@ footer a:hover, footer nav ul li a.active, nav ul li footer a.active {
   text-align: justify;
   width: 50%;
   height: 37rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .twoblock {
       height: 27rem; } }
   @media screen and (max-width: 850px) {
@@ -587,7 +589,7 @@ article.twoblock:nth-child(1) {
   text-align: right;
   padding-right: 4rem;
   padding-left: 12rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     article.twoblock:nth-child(1) {
       padding: 0 2rem; } }
   @media screen and (max-width: 850px) {
@@ -602,7 +604,7 @@ article.twoblock:nth-child(2) {
   text-align: left;
   padding-left: 4rem;
   padding-right: 12rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     article.twoblock:nth-child(2) {
       padding: 0 2rem; } }
   @media screen and (max-width: 850px) {
@@ -638,7 +640,7 @@ header, #logo, .homelander, .lander, .arrow, .bookbutton {
   border-right: 1px solid #ccc;
   padding: 0rem 2rem;
   width: 20%; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .smallblock {
       width: 33%;
       padding: 0rem 1rem; } }
@@ -669,7 +671,7 @@ header, #logo, .homelander, .lander, .arrow, .bookbutton {
     text-align: center;
     color: #fff;
     border: 2px solid #a2958f; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1300px) {
       .videogallery .slidercontainer {
         width: 90%; } }
     @media screen and (max-width: 850px) {
@@ -745,7 +747,7 @@ google-map {
   height: 750px;
   width: 75%;
   margin: 0 auto; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     google-map {
       height: 400px;
       width: 80%; } }
@@ -791,7 +793,7 @@ google-map {
   border-radius: 1rem;
   z-index: 100;
   display: none; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .modal-content {
       width: 70%; } }
   @media screen and (max-width: 850px) {
@@ -874,7 +876,7 @@ a#logo:hover .logosvg, nav ul li a#logo.active .logosvg {
   fill: #333;
   width: 10rem;
   height: 10rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     .smallblock svg {
       width: 8rem;
       height: 8rem; } }
@@ -898,7 +900,7 @@ a.hostbtnleft {
   position: absolute;
   bottom: 4rem;
   right: 4rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     a.hostbtnleft {
       bottom: 2rem;
       right: 2rem; } }
@@ -919,7 +921,7 @@ a.hostbtnright {
   position: absolute;
   bottom: 4rem;
   left: 4rem; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     a.hostbtnright {
       bottom: 2rem;
       left: 2rem; } }
