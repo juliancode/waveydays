@@ -485,32 +485,24 @@ footer {
   .bookbutton svg {
     transition: all 0.25s ease;
     fill: #ccc;
-    height: 5rem;
-    width: 5rem; }
+    height: 4rem;
+    width: 4rem; }
     @media screen and (max-width: 850px) {
       .bookbutton svg {
-        height: 4rem;
-        width: 4rem; } }
+        height: 3rem;
+        width: 3rem; } }
     @media screen and (max-width: 560px) {
       .bookbutton svg {
         height: 1.5rem;
         width: 1.5rem; } }
 
 a.bookbutton:hover svg, nav ul li a.bookbutton.active svg {
-  fill: #fff;
-  height: 6rem;
-  height: 6rem; }
-  @media screen and (max-width: 850px) {
-    a.bookbutton:hover svg, nav ul li a.bookbutton.active svg {
-      height: 5rem;
-      width: 5rem; } }
-  @media screen and (max-width: 560px) {
-    a.bookbutton:hover svg, nav ul li a.bookbutton.active svg {
-      height: 2rem;
-      width: 2rem; } }
+  fill: #a2958f;
+}
 
 a.bookbutton:hover small, nav ul li a.bookbutton.active small {
-  color: #fff; }
+  color: #a2958f; 
+}
 
 a.tool-tip {
   text-decoration: underline; }
